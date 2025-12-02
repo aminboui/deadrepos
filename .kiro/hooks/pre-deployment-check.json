@@ -1,0 +1,13 @@
+{
+  "name": "Pre-Deployment Checklist",
+  "description": "Remind about deployment requirements before building",
+  "trigger": {
+    "type": "manual",
+    "label": "🚀 Pre-Deploy Check"
+  },
+  "action": {
+    "type": "message",
+    "message": "Pre-Deployment Checklist:\n\n✅ Environment variables set in hosting platform?\n✅ .kiro directory committed to git?\n✅ Demo video recorded and uploaded?\n✅ README updated with deployment URL?\n✅ All tests passing?\n✅ Production build tested locally?\n\nRun: npm run build && npm run preview"
+  },
+  "enabled": true
+}

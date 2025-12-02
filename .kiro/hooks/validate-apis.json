@@ -1,0 +1,13 @@
+{
+  "name": "Validate API Integration",
+  "description": "Check API configurations when environment files change",
+  "trigger": {
+    "type": "onFileSave",
+    "filePattern": "**/.env*"
+  },
+  "action": {
+    "type": "message",
+    "message": "Environment variables updated. Please verify GitHub token and Gemini API key are correctly configured."
+  },
+  "enabled": true
+}
